@@ -1,6 +1,6 @@
 package main;
 
-import reader.FileReader;
+import reader.MonitoraFileReader;
 
 import menus.Controler;
 
@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//CARREGAR ELEMENTOS DO BANCO
-		FileReader rdr = new FileReader();
+		MonitoraFileReader rdr = new MonitoraFileReader();
 		
 		Controler ctr = new Controler(rdr.getUsers(), rdr.getMessages(), rdr.getClasses());
 		
