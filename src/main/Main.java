@@ -1,7 +1,7 @@
 package main;
 
-import reader.MonitoraFileReader;
-
+import fileManager.MonitoraFileReader;
+import fileManager.MonitoraFileWriter;
 import menus.Controler;
 
 public class Main {
@@ -15,6 +15,8 @@ public class Main {
 		
 		if(ctr.login()) {
 			ctr.start();
+			MonitoraFileWriter wrt = new MonitoraFileWriter(ctr.getUsers(), ctr.getArrayMessages(), ctr.getClasses());
+			wrt.terminate();
 		}
 	}
 

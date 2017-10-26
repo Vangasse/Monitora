@@ -4,11 +4,11 @@ public abstract class User {
 	protected int id;
 	protected String username;
 	protected String password;
-	protected int cpf;
+	protected String cpf;
 	protected String school;
 	protected String type;
 	
-	public User(int id, String username, String password, int cpf, String school, String type) {
+	public User(int id, String username, String password, String cpf, String school, String type) {
 		this.id = id;
 		this.username = username;
 		this.password = password;
@@ -35,6 +35,10 @@ public abstract class User {
 	
 	public String getSchool() {
 		return school;
+	}
+
+	public String getCpf() {
+		return cpf;
 	}
 	
 }

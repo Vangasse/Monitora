@@ -31,6 +31,13 @@ public class Group {
 	public String getTheme() {
 		return theme;
 	}
-	
+
+	public ArrayList<User> getUsers() {
+		return users;
+	}
+
+	public String getPassword() {
+		return password;
+	}
 	
 }
